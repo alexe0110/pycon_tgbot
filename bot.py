@@ -62,7 +62,7 @@ async def on_down_payment_entered(message: types.Message, state: FSMContext):
             await message.reply("Спасибо за вашу заявку! Вы можете подать онлайн-заявку на ипотеку на сайте "
                                 "https://domclick.ru/ipoteka/programs/onlajn-zayavka")
         else:
-            await message.reply(f"Сумма первоначального взноса должна быть не меньше {minimum_down_payment}. "
+            await message.reply(f"Сумма первоначального взноса должна быть не меньше {minimum_down_payment} рублей. "
                                 f"Пожалуйста, укажите бОльшую сумму первоначального взноса.")
             return
 
